@@ -1,0 +1,14 @@
+I:\My Drive\Projects\weChat\weChat\weChat\weChat\bin\Release\net9.0\weChat.deps.json
+I:\My Drive\Projects\weChat\weChat\weChat\weChat\bin\Release\net9.0\weChat.dll
+I:\My Drive\Projects\weChat\weChat\weChat\weChat\bin\Release\net9.0\weChat.pdb
+I:\My Drive\Projects\weChat\weChat\weChat\weChat\obj\Release\net9.0\weChat.csproj.AssemblyReference.cache
+I:\My Drive\Projects\weChat\weChat\weChat\weChat\obj\Release\net9.0\weChat.GeneratedMSBuildEditorConfig.editorconfig
+I:\My Drive\Projects\weChat\weChat\weChat\weChat\obj\Release\net9.0\weChat.AssemblyInfoInputs.cache
+I:\My Drive\Projects\weChat\weChat\weChat\weChat\obj\Release\net9.0\weChat.AssemblyInfo.cs
+I:\My Drive\Projects\weChat\weChat\weChat\weChat\obj\Release\net9.0\weChat.csproj.CoreCompileInputs.cache
+I:\My Drive\Projects\weChat\weChat\weChat\weChat\obj\Release\net9.0\weChat.sourcelink.json
+I:\My Drive\Projects\weChat\weChat\weChat\weChat\obj\Release\net9.0\XamlC.stamp
+I:\My Drive\Projects\weChat\weChat\weChat\weChat\obj\Release\net9.0\weChat.dll
+I:\My Drive\Projects\weChat\weChat\weChat\weChat\obj\Release\net9.0\refint\weChat.dll
+I:\My Drive\Projects\weChat\weChat\weChat\weChat\obj\Release\net9.0\weChat.pdb
+I:\My Drive\Projects\weChat\weChat\weChat\weChat\obj\Release\net9.0\ref\weChat.dll

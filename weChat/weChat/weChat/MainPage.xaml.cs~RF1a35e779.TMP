@@ -1,0 +1,39 @@
+﻿using System.Collections.ObjectModel;
+using weChat.Model;
+using weChat.services;
+
+namespace weChat
+{
+    public partial class MainPage : ContentPage
+    {
+        public ObservableCollection<Message> Messages { get; set; } = new();
+
+        public MainPage()
+        {
+            InitializeComponent();
+            BindingContext = this;
+
+            LoadMessages(); // Fetch messages on page load
+        }
+
+        private async void LoadMessages()
+        {
+            await SupabaseService.Init(); // Make sure Supabase is ready
+
+            var result = await SupabaseService.Client
+                .From<Message>()
+                .Order(x => x.CreatedAt, Supabase.Postgrest.Constants.Ordering.Ascending)
+                .Get();
+
+            Messages.Clear();
+            foreach (var msg in result.Models)
+            {
+                Messages.Add(msg);
+            }
+        }
+    }
+     
+}
+
+
+

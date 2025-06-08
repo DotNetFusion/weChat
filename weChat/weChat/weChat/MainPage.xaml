@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="weChat.MainPage">
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+
+        <!-- Login Section -->
+        <StackLayout x:Name="LoginSection">
+            <Label Text="Enter your username" FontSize="20" />
+            <Entry x:Name="UsernameEntry" Placeholder="Type your username" />
+            <Button Text="Login" Clicked="OnLoginClicked" />
+        </StackLayout>
+
+        <!-- Chat Section (hidden initially) -->
+        <StackLayout x:Name="ChatSection" IsVisible="False">
+
+            <CollectionView ItemsSource="{Binding Messages}" HeightRequest="400">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame Margin="5" Padding="10" BorderColor="Gray" CornerRadius="10">
+                            <VerticalStackLayout>
+                                <Label Text="{Binding users.username}" FontAttributes="Bold" FontSize="14" />
+                                <Label Text="{Binding Content}" FontSize="16" />
+                                <Label Text="{Binding CreatedAt}" FontSize="12" TextColor="Gray" />
+                            </VerticalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <HorizontalStackLayout Margin="10">
+                <Entry x:Name="MessageEntry" Placeholder="Type a message..." WidthRequest="250" />
+                <Button Text="Send" Clicked="OnSendClicked" />
+            </HorizontalStackLayout>
+
+        </StackLayout>
+
+    </VerticalStackLayout>
+
+</ContentPage>
